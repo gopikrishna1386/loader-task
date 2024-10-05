@@ -1,0 +1,38 @@
+<div >
+  <button type="button" style="margin-left: 662px;margin-bottom: 185px;
+    margin-top: 200px;" class="btn btn-primary" (click)="startMigration()">Start</button>
+</div>
+
+<div class="toggle-section ">
+  <button type="button" (click)="toggleContent()" class="btn btn-primary" style="text-align: right;
+    display: inline;">
+    <span *ngIf="showOffcanvas">⬇️ Hide</span>
+    <span *ngIf="!showOffcanvas">⬆️ Show</span>
+  </button>
+  <div class="clearfix"></div>
+</div>
+<div>
+<div *ngIf="showOffcanvas">
+  <div class="left-box">
+    🔧
+  </div>
+  <div class="offcanvas-body" style="margin-top:10px; background-color: white; padding-right: 114px;">
+    <div class="content-section1">
+      <span class="float-left">
+        <p class="m-0">Migrating data to selected environment</p>
+      </span>
+      <span class="float-right">
+        {{this.progress}} %
+      </span>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="progress_bar">
+        <div class="progress-bar" [style.width.%]="progress"></div> 
+      <div class="clearfix"></div>
+  </div>
+</div>
+</div>
+
+
+<router-outlet />

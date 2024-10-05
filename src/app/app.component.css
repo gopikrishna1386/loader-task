@@ -1,0 +1,61 @@
+  .offcanvas-body {
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .progress-bar {
+    height: 10px;
+    background-color: #0000FF;
+    border-radius: 5px;
+  }
+
+  .toggle-section {
+    margin-bottom: 10px;
+  }
+
+  .content-section {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  span.float-left {
+    float: left;
+  }
+
+  span.float-right {
+    float: right;
+  }
+
+  .content-section1 {
+    width: 100%;
+  }
+
+  .left-box {
+    width: 50px;
+    background: #004691;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .toggle-section {
+    width: 150px;
+    margin: 0 0 0 auto;
+  }
+
+  .progress-bar {
+    height: 10px;
+    background-color: #0000FF;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 6px;
+  }
